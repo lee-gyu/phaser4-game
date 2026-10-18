@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    // scripts/*.ts 는 Node의 타입 스트리핑으로 직접 실행하므로 지울 수 있는 문법만 허용
+    "erasableSyntaxOnly": true,
+    "types": ["node"]
+  },
+  "include": ["*.ts", "*.js", "scripts"]
+}
